@@ -1,0 +1,28 @@
+<article id="create_product">
+	<div>
+		<label for="name">Name:</label>
+		<input type="text" name="name" id="input-product-name">
+	</div>
+	<div>
+		<label for="model">Model:</label>
+		<input type="text" name="model" id="input-product-model">
+	</div>
+	<div>
+		<label for="stock">Stock:</label>
+		<input type="number" name="stock" id="input-product-stock">
+	</div>
+	<div>
+		<label for="ecommerce">Ecommerce:</label>
+		<input type="radio" name="ecommerce" value="cardinal" checked id="input-product-ecommerce">Cardinal<br>
+	</div>
+	<div>
+		<label>Variants:</label>
+		<div>
+			<button id="btn-add-variant-type" ng-click="onAddVariantClick()">Add variant</button>
+			<div class="variants-content"></div>
+		</div>
+	</div>
+	<div>
+		<button ng-click="onCreateClick()">Create</button>
+	</div>
+</article>

@@ -1,0 +1,18 @@
+.app{
+	display:inline-block;
+}
+#content{
+	overflow:auto; 
+}
+.menu{
+	width: 150px;
+    overflow: hidden;
+}
+
+.menu-item{ 
+    width: 100%;
+}
+.rounded-container{
+	border-radius: 5px;
+}
+

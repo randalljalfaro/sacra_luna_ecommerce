@@ -1,0 +1,17 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Randall Josué Alfaro González",
+  "dependencies": {
+    "angular": "^1.5.x",
+    "angular-animate": "^1.4.x",
+    "angular-aria": "^1.4.x",
+    "angular-cookies": "^1.4.x",
+    "angular-ui-router": "~0.2.11",
+    "angular-ui-utils": "~0.2.1",
+    "jquery": ">=3.1.x",
+    "jquery-ui": ">=1.12.x"
+  }
+}

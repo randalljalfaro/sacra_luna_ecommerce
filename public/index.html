@@ -1,0 +1,57 @@
+<html>
+<head>
+  <title>Sacra-Luna Ecommerce</title>
+  <link rel="stylesheet" href="styles/app.css">
+
+  <!-- Jquery -->
+  <link rel="stylesheet" href="bower_components/jquery-ui/themes/base/jquery-ui.css">
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+
+  <!-- Angular -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+
+  <!-- Application -->
+  <script src="scripts/app.js"></script>
+  <script src="scripts/services/server-uri.const.js"></script>
+  <script src="scripts/services/api.factory.js"></script>
+  <script src="scripts/routing.js"></script>
+
+  <!--Controllers ***Utilizar lazyload***-->
+  <script src="scripts/controllers/products.js"></script>
+
+  <!--Directives ***Utilizar lazyload***-->
+  <script src="scripts/directives/products/create.js"></script>
+
+</head>
+<body ng-app="sacra_luna_ecommerce" ng-controller="appCtrl" class="app">
+
+  <header>
+    <div>
+      <a href="/">
+        <img src="assets/luna.jpg"  height="70" width="100">
+        <br>Sacra Luna Ecommerce
+      </a>
+    </div>
+  </header>
+
+  <section>
+    <nav>
+      <ul id="main-menu" class="menu rounded-container">
+        <li><a href="#products" class="rounded-container menu-item">Products</a></li>
+        <li><a href="#orders" class="rounded-container menu-item">Orders</a></li>
+        <li><a href="#tracking" class="rounded-container menu-item"></i>Tracking</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main container -->
+    <div id="content">
+      <div ng-view></div>
+    </div>
+
+  </section>
+
+  <footer></footer>
+</body>
+</html>
